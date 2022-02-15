@@ -4,6 +4,19 @@ import { Component } from "react"
 import { Index } from "elasticlunr"
 import { Link } from "gatsby"
 import { RiSearchLine } from "react-icons/ri"
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+<script type="text/javascript">
+  algoliasearchNetlify({
+    appId: '56CRKYHDWP',
+    apiKey: 'a357537b9969775e330bd09a13ba5c70',
+    siteId: '48363635-dc0f-43cf-905b-c096b190574c',
+    branch: 'main',
+    selector: 'div#search',
+  });
+</script>
+
+
 
 export default class Search extends Component {
   constructor(props) {
@@ -33,6 +46,7 @@ export default class Search extends Component {
             <RiSearchLine />
           </button>
           <div sx={searchStyle.search} className="search-container">
+          <div id="search"></div>
             <input
               type="text"
               placeholder="Search"

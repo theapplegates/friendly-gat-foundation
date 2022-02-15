@@ -26,6 +26,8 @@ import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
 import Icons from "../util/socialmedia.json"
 
+
+
 export const pageQuery = graphql`
   query HomeQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {

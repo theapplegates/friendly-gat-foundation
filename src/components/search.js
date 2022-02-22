@@ -5,8 +5,7 @@ import { Index } from "elasticlunr"
 import { Link } from "gatsby"
 import { RiSearchLine } from "react-icons/ri"
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
   algoliasearchNetlify({
     appId: '56CRKYHDWP',
     apiKey: 'a357537b9969775e330bd09a13ba5c70',
